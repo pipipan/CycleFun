@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
+        "source": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+    },
+    {
+        "merged": "/Users/Hao/Documents/JSP/Project2/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
+        "source": "/Users/Hao/Documents/JSP/Project2/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
+    }
+]
