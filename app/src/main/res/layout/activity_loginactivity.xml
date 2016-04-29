@@ -13,12 +13,6 @@
     tools:context=".LoginActivity">
 
     <!-- LoginActivity progress -->
-    <ProgressBar
-        android:id="@+id/login_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone"/>
 
     <ScrollView
         android:id="@+id/login_form"
@@ -69,7 +63,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/register_link"
+        android:id="@+id/link_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"

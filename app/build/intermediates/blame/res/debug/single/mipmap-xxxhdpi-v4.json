@@ -4,6 +4,10 @@
         "source": "/Users/Hao/Documents/JSP/Project2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/Project2/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
         "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/Project2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
