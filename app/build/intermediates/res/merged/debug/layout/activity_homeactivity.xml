@@ -16,28 +16,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:orientation="horizontal">
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="profile"
             android:layout_weight="1"
-            android:onClick="renderProfile">
+            android:onClick="renderProfile"
+            android:id="@+id/button_profile">
         </Button>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="recommendation"
             android:layout_weight="1"
-            android:onClick="renderRecommendation">
+            android:onClick="renderRecommendation"
+            android:id="@+id/button_reco">
         </Button>
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="friends"
             android:layout_weight="1"
-            android:onClick="renderFriends">
+            android:onClick="renderFriends"
+            android:id="@+id/button_friends">
         </Button>
     </LinearLayout>
 
@@ -46,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="5">
+        android:layout_weight="1">
         <fragment
             android:id="@+id/map_fragment"
             class="com.google.android.gms.maps.MapFragment"
@@ -58,19 +60,20 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:orientation="horizontal">
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="start"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/button_start">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="end"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:id="@+id/button_end">
         </Button>
     </LinearLayout>
 
