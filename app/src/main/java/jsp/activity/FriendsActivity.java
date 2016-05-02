@@ -16,7 +16,7 @@ public class FriendsActivity extends Activity{
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_title);
 
         ArrayAdapter adaptor = new ArrayAdapter<String>(this, R.layout.profile_listview, friendsArray);
-        ListView listView = (ListView) findViewById(R.id.friendsListView);
+        ListView listView = (ListView) findViewById(R.id.list_friends);
         listView.setAdapter(adaptor);
     }
 }

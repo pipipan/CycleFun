@@ -349,6 +349,8 @@
     <string name="accept">Accept</string>
     <string name="action_log_in">Log In</string>
     <string name="action_register">Register New Account</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
     <string name="action_sign_up">Sign Up</string>
     <string name="app_name">CycleFun</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
@@ -394,8 +396,8 @@
     <string name="decline">Decline</string>
     <string name="error_field_required">This field is required</string>
     <string name="error_incorrect_password">This password is incorrect</string>
-    <string name="error_invalid_email">This email address is invalid</string>
-    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_password">This password should be a combination of numbers and letters</string>
+    <string name="error_invalid_username">This username is invalid</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
         AIzaSyCjyAeghDqffz6bksIw4vrYXzKcycNK2EA
     </string>
@@ -415,12 +417,13 @@
     </string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
-    <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
+    <string name="prompt_username">Username</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_test">Test</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
