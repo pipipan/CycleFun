@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:2:1-79:12
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:2:1-76:12
 	package
 		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:3:5-27
 		INJECTED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml
@@ -38,7 +38,7 @@ ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFu
 	android:name
 		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:19:22-69
 application
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:24:5-77:19
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:24:5-74:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/AndroidManifest.xml:7:5-20
@@ -250,12 +250,6 @@ ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFu
 		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:68:13-52
 	android:name
 		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:67:13-62
-activity#jsp.activity.Test
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:74:9-76:68
-	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:76:13-56
-	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:75:13-33
 uses-sdk
 INJECTED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:21:5-23:78

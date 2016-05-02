@@ -6,28 +6,41 @@ package jsp.ws.local;
 public class UserInfoDBController {
 
     public boolean isUsernameValid(String username) {
-        //TODO: Replace this with your own logic
         return username.length() >= 5;
     }
 
     public boolean isPasswordValid(String password) {
-        //TODO: Replace this with your own logic
         return password.matches(".*[a-zA-Z]+.*") && password.matches(".*[0-9].*");
     }
 
+    public boolean isConfirmPasswordMatch(String password, String confirmPassword) {
+        return password.matches(confirmPassword);
+    }
 
 
     public boolean verifyLogin(String username, String password){
+        if(userExist(username)){
+            //TODO: add the logic to compare with server side DB
+
+        }else{
+            return false;
+        }
         return true;
     };
 
     public boolean verifySignup(String username, String password){
-        return false;
+        if(!userExist(username)){
+            //TODO: add the new user info to both local and server side DBs
+
+        }else{
+            return false;
+        }
+        return true;
     };
 
-    public boolean userExist(){
+    public boolean userExist(String userrname){
+        //TODO: check server side DB if the username exists
+
         return false;
     }
-
-
 }

@@ -10,6 +10,7 @@
     <string name="action_register">Register New Account</string>
     <string name="error_invalid_username">This username is invalid</string>
     <string name="error_invalid_password">This password should be a combination of numbers and letters</string>
+    <string name="error_incorrect_confirmPassword">The passwords do not match</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email

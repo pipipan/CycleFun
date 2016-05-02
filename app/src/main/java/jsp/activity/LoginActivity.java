@@ -27,7 +27,7 @@ public class LoginActivity extends Activity{
     private UserLoginTask mAuthTask = null;
 
     // UI references.
-    private EditText mUserNameView;
+    private EditText mUsernameView;
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
@@ -39,7 +39,7 @@ public class LoginActivity extends Activity{
         setContentView(R.layout.activity_loginactivity);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_title);
         // Set up the login form.
-        mUserNameView = (EditText) findViewById(R.id.username);
+        mUsernameView = (EditText) findViewById(R.id.username);
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -52,8 +52,8 @@ public class LoginActivity extends Activity{
             }
         });
 
-        Button mSignInButton = (Button) findViewById(R.id.sign_in_button);
-        mSignInButton.setOnClickListener(new View.OnClickListener() {
+        Button mLoginButton = (Button) findViewById(R.id.log_in_button);
+        mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
@@ -70,11 +70,11 @@ public class LoginActivity extends Activity{
         }
 
         // Reset errors.
-        mUserNameView.setError(null);
+        mUsernameView.setError(null);
         mPasswordView.setError(null);
 
         // Store values at the time of the login attempt.
-        String username = mUserNameView.getText().toString();
+        String username = mUsernameView.getText().toString();
         String password = mPasswordView.getText().toString();
         UserInfoDBController controller = new UserInfoDBController();
 
@@ -94,12 +94,12 @@ public class LoginActivity extends Activity{
 
         // Check for a valid username address.
         if (TextUtils.isEmpty(username)) {
-            mUserNameView.setError(getString(R.string.error_field_required));
-            focusView = mUserNameView;
+            mUsernameView.setError(getString(R.string.error_field_required));
+            focusView = mUsernameView;
             cancel = true;
         } else if (!controller.isUsernameValid(username)) {
-            mUserNameView.setError(getString(R.string.error_invalid_username));
-            focusView = mUserNameView;
+            mUsernameView.setError(getString(R.string.error_invalid_username));
+            focusView = mUsernameView;
             cancel = true;
         }
 
