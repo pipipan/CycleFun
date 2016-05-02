@@ -8,6 +8,10 @@
         "source": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     },
     {
+        "merged": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
         "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/Project2/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
         "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/Project2/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     },

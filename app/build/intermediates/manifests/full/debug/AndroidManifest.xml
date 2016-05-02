@@ -86,9 +86,7 @@
         <!-- android:name=".MapsActivity" -->
         <!-- android:label="@string/title_activity_maps"></activity> -->
 
-        <activity
-            android:name="jsp.activity.Test"
-            android:label="@string/title_activity_test" />
+
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

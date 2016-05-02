@@ -6,7 +6,7 @@ package jsp.entities;
 public class Route {
     private String username;
     private String title;
-    private String srartLocation;
+    private String startLocation;
     private String endLocation;
     private int review;
     private String postDate;
@@ -28,12 +28,12 @@ public class Route {
         this.title = title;
     }
 
-    public String getSrartLocation() {
-        return srartLocation;
+    public String getStartLocation() {
+        return startLocation;
     }
 
-    public void setSrartLocation(String srartLocation) {
-        this.srartLocation = srartLocation;
+    public void setStartLocation(String startLocation) {
+        this.startLocation = startLocation;
     }
 
     public String getEndLocation() {

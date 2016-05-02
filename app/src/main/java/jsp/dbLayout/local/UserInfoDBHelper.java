@@ -27,10 +27,10 @@ public class UserInfoDBHelper extends SQLiteOpenHelper {
                 "username STRING NOT NULL, " +
                 "password STRING NOT NULL, " +
                 "photo STRING, " +
-                "age INTERGER);";
+                "age INTEGER);";
 
         db.execSQL(query); // execute the query
-        Log.d("MessageDB", "tabel-massage is created");
+        Log.d("UserInfoDB", "table-userinfo is created");
     } // end method onCreate
 
     @Override
