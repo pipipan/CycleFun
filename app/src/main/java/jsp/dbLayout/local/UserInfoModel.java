@@ -1,19 +1,22 @@
 package jsp.dbLayout.local;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 /**
  * Created by Hao on 4/14/16.
  */
 public class UserInfoModel {
-// database name
-private static final String DATABASE_NAME = "TEST_USERINFO";
-private SQLiteDatabase database; // database object
-private UserInfoDBHelper userInfoDBHelper; // database helper
-Context context;
+    // database name
+    private static final String DATABASE_NAME = "TEST_USERINFO1";
+    private SQLiteDatabase database; // database object
+    private UserInfoDBHelper userInfoDBHelper; // database helper
+    Context context;
 
     public UserInfoModel(Context context){
         // create a new DatabaseOpenHelper
@@ -52,41 +55,22 @@ Context context;
 //        return students;
 //    }
 //
-//    // inserts a set of new input data in the database
-//    public void insertInput()
-//    {
-//        try {
-//            BufferedReader reader = new BufferedReader(
-//                    new InputStreamReader(context.getAssets().open("scores.txt"))
-//            );
-//            Log.d("io", "reading text file");
-//
-//            String str = reader.readLine();
-//
-//            while(str != null){
-//                String[] input = str.split("\t");
-//                ContentValues newInput = new ContentValues();
-//                newInput.put("studentID", input[0]);
-//                newInput.put("quiz1", input[1]);
-//                newInput.put("quiz2", input[2]);
-//                newInput.put("quiz3", input[3]);
-//                newInput.put("quiz4", input[4]);
-//                newInput.put("quiz5", input[5]);
-//
-//                try{
-//                    open(); // open the database
-//                    database.insert("scores", null, newInput);
-//                    close(); // close the database
-//                    Log.d("insert", "score data is stored");
-//                }catch(SQLException e){
-//                    e.printStackTrace();
-//                }
-//                str = reader.readLine();
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    } // end method insertContact
+    // inserts a new user into local database
+    public void addUser(String username, String password)
+    {
+        ContentValues newUser = new ContentValues();
+        newUser.put("username", username);
+        newUser.put("password", password);
+
+        try{
+            open(); // open the database
+            database.insertWithOnConflict("userInfo", null, newUser, SQLiteDatabase.CONFLICT_IGNORE);
+            close(); // close the database
+            Log.d("UserInfoModel", "user info stored in local");
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+    } // end method insertContact
 
 
 }

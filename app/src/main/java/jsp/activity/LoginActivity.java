@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import jsp.dbLayout.local.UserInfoModel;
 import jsp.ws.local.UserInfoDBController;
 
 public class LoginActivity extends Activity{
@@ -76,7 +77,7 @@ public class LoginActivity extends Activity{
         // Store values at the time of the login attempt.
         String username = mUsernameView.getText().toString();
         String password = mPasswordView.getText().toString();
-        UserInfoDBController controller = new UserInfoDBController();
+        UserInfoDBController controller = new UserInfoDBController(this);
 
         boolean cancel = false;
         View focusView = null;
@@ -138,7 +139,7 @@ public class LoginActivity extends Activity{
                 return false;
             }
 
-            UserInfoDBController controller = new UserInfoDBController();
+            UserInfoDBController controller = new UserInfoDBController(getApplication());
             return controller.verifyLogin(mEmail, mPassword);
         }
 

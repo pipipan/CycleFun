@@ -20,17 +20,16 @@ public class UserInfoDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db)
     {
-        // query to create a new table named contacts
-
+        // query to create a new table named userInfo
         String query = "CREATE TABLE IF NOT EXISTS userInfo" +
-                "(userInfo_ID INTEGER PRIMARY KEY AUTO INCREMENT , " +
-                "username STRING NOT NULL, " +
+                "(userInfo_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "username STRING NOT NULL UNIQUE, " +
                 "password STRING NOT NULL, " +
                 "photo STRING, " +
-                "age INTERGER);";
+                "age INTEGER);";
 
         db.execSQL(query); // execute the query
-        Log.d("MessageDB", "tabel-massage is created");
+        Log.d("UserInfoDBHelper", "tabel-userInfo is created");
     } // end method onCreate
 
     @Override

@@ -1,9 +1,21 @@
 package jsp.ws.local;
 
+import android.content.Context;
+
+import jsp.entities.User;
+
 /**
  * Created by Hao on 4/14/16.
  */
 public class UserInfoDBController {
+
+
+    private static User user;
+    protected Context ctx;
+
+    public UserInfoDBController(Context ctx) {
+        this.ctx = ctx;
+    }
 
     public boolean isUsernameValid(String username) {
         return username.length() >= 5;
@@ -19,18 +31,23 @@ public class UserInfoDBController {
 
 
     public boolean verifyLogin(String username, String password){
-        if(userExist(username)){
-            //TODO: add the logic to compare with server side DB
-
-        }else{
-            return false;
-        }
+//        if(userExist(username)){
+//            //TODO: add the logic to compare with server side DB
+//
+//        user = new User(username, password);
+//
+//        }else{
+//            return false;
+//        }
+        user = new User(ctx, username, password);
         return true;
     };
 
     public boolean verifySignup(String username, String password){
         if(!userExist(username)){
             //TODO: add the new user info to both local and server side DBs
+
+            user = new User(ctx, username, password);
 
         }else{
             return false;

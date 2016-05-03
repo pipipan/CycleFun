@@ -1,5 +1,10 @@
 package jsp.entities;
 
+import android.app.Application;
+import android.content.Context;
+
+import jsp.dbLayout.local.UserInfoModel;
+
 /**
  * Created by Hao on 4/14/16.
  */
@@ -10,11 +15,25 @@ public class User {
     private String photo;
     private int status;
     private String lastLocation;
+    protected Context ctx;
 
-    public User(String username, String password, int status) {
+    public User(Context ctx, String username, String password) {
+        this.ctx = ctx;
         this.username = username;
         this.password = password;
-        this.status = status;
+
+        updateLocalUserDB(username, password);
+        //TODO: updagteServerUserDb();
+    }
+
+    private void updagteServerUserDb(String username, String password, int status, String location) {
+        //TODO:
+    }
+
+    private void updateLocalUserDB(String username, String password) {
+        //TODO:
+        UserInfoModel uim = new UserInfoModel(ctx);
+        uim.addUser(username, password);
     }
 
     public String getUsername() {

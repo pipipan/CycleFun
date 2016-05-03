@@ -79,7 +79,7 @@ public class SignupActivity extends Activity {
         String username = mUserNameView.getText().toString();
         String password = mPasswordView.getText().toString();
         String confirmPassword = mConfirmPasswordView.getText().toString();
-        UserInfoDBController controller = new UserInfoDBController();
+        UserInfoDBController controller = new UserInfoDBController(this);
 
         boolean cancel = false;
         View focusView = null;
@@ -152,7 +152,7 @@ public class SignupActivity extends Activity {
                 return false;
             }
 
-            UserInfoDBController controller = new UserInfoDBController();
+            UserInfoDBController controller = new UserInfoDBController(getApplication());
             return controller.verifySignup(mEmail, mPassword);
         }
 
