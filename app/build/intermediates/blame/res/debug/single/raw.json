@@ -8,6 +8,10 @@
         "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
     },
     {
+        "merged": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
+    },
+    {
         "merged": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
         "source": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/res/raw/gtm_analytics"
     }

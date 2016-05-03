@@ -1,0 +1,45 @@
+package jsp.dbLayout.local;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+/**
+ * Created by Hao on 4/14/16.
+ */
+public class UserInfoDBHelper extends SQLiteOpenHelper {
+    // public constructor
+    public UserInfoDBHelper (Context context, String name,
+                            SQLiteDatabase.CursorFactory factory, int version)
+    {
+        super(context, name, factory, version);
+    } // end DatabaseOpenHelper constructor
+
+    // creates the contacts table when the database is created
+    @Override
+    public void onCreate(SQLiteDatabase db)
+    {
+        // query to create a new table named userInfo
+        String query = "CREATE TABLE IF NOT EXISTS userInfo" +
+                "(userInfo_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "username STRING NOT NULL UNIQUE, " +
+                "password STRING NOT NULL, " +
+                "photo STRING, " +
+                "age INTEGER);";
+
+        db.execSQL(query); // execute the query
+<<<<<<< HEAD
+        Log.d("UserInfoDBHelper", "tabel-userInfo is created");
+=======
+        Log.d("UserInfoDB", "table-userinfo is created");
+>>>>>>> 845462ce2827d952460b652a2e6b3a108d1725d7
+    } // end method onCreate
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion,
+                          int newVersion)
+    {
+    } // end method onUpgrade
+
+}

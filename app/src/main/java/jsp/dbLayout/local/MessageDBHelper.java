@@ -30,7 +30,7 @@ public class MessageDBHelper extends SQLiteOpenHelper {
                 "date STRING NOT NULL);";
 
         db.execSQL(query); // execute the query
-        Log.d("MessageDB", "tabel-massage is created");
+        Log.d("MessageDB", "table-massage is created");
     } // end method onCreate
 
     @Override
