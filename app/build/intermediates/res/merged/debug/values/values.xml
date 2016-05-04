@@ -357,6 +357,8 @@
     <string name="auth_google_play_services_client_facebook_display_name">Facebook</string>
     <string name="auth_google_play_services_client_google_display_name">Google</string>
     <string name="bottom_sheet_behavior" translatable="false">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_save">Save</string>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_connecting_message">Connecting to <ns1:g id="name">%1$s</ns1:g></string>
     <string name="cast_notification_disconnect">Disconnect</string>
@@ -423,6 +425,7 @@
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
+    <string name="title_activity_change_profile">ChangeProfileActivity</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_test">Test</string>
     <string name="wallet_buy_button_place_holder">Buy with Google</string>

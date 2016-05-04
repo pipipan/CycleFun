@@ -1,18 +1,6 @@
 [
     {
-        "merged": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
-    },
-    {
         "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
         "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/Project2/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/Users/Hao/Documents/JSP/Project2/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
-        "source": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/layout-v21/place_autocomplete_fragment.xml"
     }
 ]

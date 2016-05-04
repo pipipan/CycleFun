@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:2:1-76:12
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:2:1-80:12
 	package
 		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:3:5-27
 		INJECTED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml
@@ -38,7 +38,7 @@ ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFu
 	android:name
 		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:19:22-69
 application
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:24:5-74:19
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:25:5-78:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/AndroidManifest.xml:7:5-20
@@ -156,59 +156,59 @@ MERGED from [com.google.android.gms:play-services-wearable:8.4.0] /Users/jasonzk
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.android.support:support-v4:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/AndroidManifest.xml:22:5-20
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:26:9-41
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:27:9-41
 	android:icon
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:25:9-36
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:26:9-36
 	android:theme
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:27:9-43
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:28:9-43
 activity#jsp.activity.LoginActivity
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:28:9-36:20
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:29:9-37:20
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:30:13-45
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:31:13-45
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:29:13-42
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:30:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:31:13-35:29
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:32:17-69
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:32:25-66
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:34:17-77
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:34:27-74
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:35:27-74
 activity#jsp.activity.SignupActivity
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:37:9-39:57
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:38:9-40:48
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:39:13-45
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:40:13-45
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:38:13-43
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:39:13-43
 activity#jsp.activity.ProfileActivity
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:40:9-42:57
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:41:9-43:48
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:42:13-45
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:43:13-45
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:41:13-44
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:42:13-44
 activity#jsp.activity.HomeActivity
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:43:9-45:57
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:44:9-46:48
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:45:13-45
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:46:13-45
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:44:13-41
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:45:13-41
 activity#jsp.activity.FriendsActivity
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:46:9-48:57
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:47:9-49:48
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:48:13-45
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:49:13-45
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:47:13-44
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:48:13-44
 activity#jsp.activity.RoutesActivity
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:49:9-51:57
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:50:9-52:48
 	android:label
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:51:13-45
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:52:13-45
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:50:13-43
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:51:13-43
 meta-data#com.google.android.gms.version
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:61:9-63:69
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:62:9-64:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
@@ -241,15 +241,21 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzk
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:63:13-66
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:64:13-66
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:62:13-58
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:63:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:66:9-68:55
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:67:9-69:55
 	android:value
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:68:13-52
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:69:13-52
 	android:name
-		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:67:13-62
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:68:13-62
+activity#jsp.activity.ChangeProfileActivity
+ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:75:9-77:78
+	android:label
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:77:13-66
+	android:name
+		ADDED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml:76:13-50
 uses-sdk
 INJECTED from /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] /Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/AndroidManifest.xml:21:5-23:78
