@@ -17,6 +17,14 @@ public class UserInfoDBController {
         this.ctx = ctx;
     }
 
+    public static User getUser() {
+        return user;
+    }
+
+    public static void setUser(User user) {
+        UserInfoDBController.user = user;
+    }
+
     public boolean isUsernameValid(String username) {
         return username.length() >= 5;
     }

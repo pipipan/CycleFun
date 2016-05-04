@@ -1,31 +1,7 @@
 [
     {
-        "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/Project2/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/Project2/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/profile.png",
         "source": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/src/main/res/mipmap-xhdpi/profile.png"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/profile.png",
-        "source": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/src/main/res/mipmap-xhdpi/profile.png"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/logo.png",
-        "source": "/Users/Hao/Documents/JSP/CycleFun/CycleFun/app/src/main/res/mipmap-xhdpi/logo.png"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/Hao/Documents/JSP/CycleFun/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/Hao/Documents/JSP/Project2/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
-        "source": "/Users/Hao/Documents/JSP/Project2/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
