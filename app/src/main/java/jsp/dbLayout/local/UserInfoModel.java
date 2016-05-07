@@ -88,5 +88,20 @@ public class UserInfoModel {
         }
     } // end method insertContact
 
+    // update username
+    public void updateUsername(String oldUsername, String newUsername)
+    {
+        try{
+            open(); // open the database
+            String sql = "UPDATE userInfo SET username = '" + newUsername
+                    + "' WHERE username = '" + oldUsername + "';";
+            database.rawQuery(sql, null);
+            close(); // close the database
+            Log.d("UserInfoModel", "username updated");
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+    } // end method insertContact
+
 
 }

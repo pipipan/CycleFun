@@ -16,6 +16,7 @@ import jsp.ws.local.UserInfoDBController;
 
 public class ProfileActivity extends Activity {
     public static String[] profileArray = {"Username", "", "Password", "", "Age", ""};
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class ProfileActivity extends Activity {
 
         UserInfoDBController uidbc = new UserInfoDBController(this);
         UserInfoModel uim = new UserInfoModel(this);
-        String username  = uidbc.getUser().getUsername();
+        username  = uidbc.getUser().getUsername();
         ArrayList<String> userInfo = uim.getUserInfo(username);
         profileArray[1] = userInfo.get(0);
         profileArray[3] = userInfo.get(1);
@@ -43,6 +44,7 @@ public class ProfileActivity extends Activity {
                     case 1:
                         intent = new Intent(ProfileActivity.this, ChangeProfileActivity.class);
                         intent.putExtra("title", "Username");
+                        intent.putExtra("username", username);
                         startActivity(intent);
                         break;
                     case 3: renderRevisionPage("ChangePasswordActivity", "Password");
@@ -50,6 +52,7 @@ public class ProfileActivity extends Activity {
                     case 5:
                         intent = new Intent(ProfileActivity.this, ChangeProfileActivity.class);
                         intent.putExtra("title", "Age");
+                        intent.putExtra("username", username);
                         startActivity(intent);
                         break;
                 }
