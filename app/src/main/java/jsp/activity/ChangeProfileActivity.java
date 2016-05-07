@@ -1,16 +1,26 @@
 package jsp.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.annotation.StringRes;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import jsp.dbLayout.local.UserInfoModel;
+import jsp.ws.local.UserInfoDBController;
 
-public class ChangeProfileActivity extends Activity {
+
+public class ChangeProfileActivity extends Activity implements View.OnClickListener{
     private TextView mTitleView;
     private EditText mUpdateView;
+    private Button  button_cancel;
+    private Button  button_save;
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +31,36 @@ public class ChangeProfileActivity extends Activity {
 
         mTitleView = (TextView)findViewById(R.id.titleView);
         mUpdateView = (EditText) findViewById(R.id.updateView);
+        button_save = (Button) findViewById(R.id.button_save);
+        button_cancel = (Button) findViewById(R.id.button_cancel);
+        Bundle bundle = getIntent().getExtras();
+        username = bundle.getString("username");
 
-        mTitleView.setText(getIntent().getExtras().getString("title"));
-
+        mTitleView.setText(bundle.getString("title"));
+        button_cancel.setOnClickListener(this);
+        button_save.setOnClickListener(this);
     }
 
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.button_save){
+            String newUsername = mUpdateView.getText().toString();
+            View focusView = null;
+            UserInfoModel uim = new UserInfoModel(this);
+            uim.updateUsername(username, newUsername);
+
+            UserInfoDBController controller = new UserInfoDBController(this);
+            // Check for a valid username address.
+            if (TextUtils.isEmpty(newUsername)) {
+                mUpdateView.setError(getString(R.string.error_field_required));
+                focusView = mUpdateView;
+            } else if (!controller.isUsernameValid(username)) {
+                mUpdateView.setError(getString(R.string.error_invalid_username));
+                focusView = mUpdateView;
+            }
+
+        }
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
 }
