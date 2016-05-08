@@ -1,0 +1,3 @@
+CHANGED,/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/jsp/activity/ProfileActivity$2.class
+CHANGED,/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/jsp/activity/ProfileActivity.class
+CHANGED,/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/jsp/activity/ProfileActivity$1.class
