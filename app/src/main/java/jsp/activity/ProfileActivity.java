@@ -16,7 +16,9 @@ import jsp.ws.local.UserInfoDBController;
 
 public class ProfileActivity extends Activity {
     public static String[] profileArray = {"Username", "", "Password", "", "Age", ""};
+    int userId;
     String username;
+    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +27,8 @@ public class ProfileActivity extends Activity {
         setContentView(R.layout.activity_profileactivity);
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.custom_title);
 
-        UserInfoDBController uidbc = new UserInfoDBController(this);
-        UserInfoModel uim = new UserInfoModel(this);
-        username  = uidbc.getUser().getUsername();
-        ArrayList<String> userInfo = uim.getUserInfo(username);
-        profileArray[1] = userInfo.get(0);
-        profileArray[3] = userInfo.get(1);
-        profileArray[5] = userInfo.get(2);
+        updateList();
 
-        ArrayAdapter adaptor = new ArrayAdapter<String>(this, R.layout.profile_listview, profileArray);
-        ListView listView = (ListView) findViewById(R.id.listView);
-        listView.setAdapter(adaptor);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -60,7 +53,27 @@ public class ProfileActivity extends Activity {
         });
     }
 
-    protected void renderRevisionPage(String className, String title){
+    private void updateList() {
+        UserInfoDBController uidbc = new UserInfoDBController(this);
+        UserInfoModel uim = new UserInfoModel(this);
+        userId  = uidbc.getUser().getUserId();
+        ArrayList<String> userInfo = uim.getUserInfo(userId);
+        profileArray[1] = userInfo.get(0);
+        profileArray[3] = userInfo.get(1);
+        profileArray[5] = userInfo.get(2);
+
+        ArrayAdapter adaptor = new ArrayAdapter<String>(this, R.layout.profile_listview, profileArray);
+        listView = (ListView) findViewById(R.id.listView);
+        listView.setAdapter(adaptor);
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        updateList();
+    }
+
+    private void renderRevisionPage(String className, String title){
         Intent intent = null;
         try {
             intent = new Intent(ProfileActivity.this, Class.forName(className));

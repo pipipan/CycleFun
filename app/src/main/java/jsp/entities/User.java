@@ -1,6 +1,5 @@
 package jsp.entities;
 
-import android.app.Application;
 import android.content.Context;
 
 import jsp.dbLayout.local.UserInfoModel;
@@ -11,6 +10,7 @@ import jsp.dbLayout.local.UserInfoModel;
 public class User {
     private String username;
     private String password;
+    private int userId;
     private int age;
     private String photo;
     private int status;
@@ -22,7 +22,7 @@ public class User {
         this.username = username;
         this.password = password;
 
-        updateLocalUserDB(username, password);
+        this.userId = addToLocalUserDB(username, password);
         //TODO: updagteServerUserDb();
     }
 
@@ -30,10 +30,21 @@ public class User {
         //TODO:
     }
 
-    private void updateLocalUserDB(String username, String password) {
+    private int addToLocalUserDB(String username, String password) {
         //TODO:
         UserInfoModel uim = new UserInfoModel(ctx);
-        uim.addUser(username, password);
+        return uim.addUser(username, password);
+    }
+
+    private void updateLocalUserDB(int userId, String username, String password, int age){
+        UserInfoModel uim = new UserInfoModel(ctx);
+        uim.updateUser(userId, username, password, age);
+    }
+
+    public void updateUsername(String newUsername){
+        setUsername(newUsername);
+        updateLocalUserDB(userId, username, password, age);
+
     }
 
     public String getUsername() {
@@ -82,5 +93,13 @@ public class User {
 
     public void setLastLocation(String lastLocation) {
         this.lastLocation = lastLocation;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 }
