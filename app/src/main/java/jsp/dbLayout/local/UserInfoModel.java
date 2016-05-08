@@ -42,9 +42,9 @@ public class UserInfoModel {
     } // end method close
 
     //get user info and show on profile activity
-    public ArrayList getUserInfo(String username){
+    public ArrayList getUserInfo(int userId){
         ArrayList userInfo = new ArrayList<String>();
-        String sql = "SELECT username, password, age FROM userInfo WHERE username = '" + username + "';";
+        String sql = "SELECT username, password, age FROM userInfo WHERE userInfo_ID == " + userId + ";";
         try {
             open();
             Cursor c = database.rawQuery(sql, null);
@@ -72,25 +72,48 @@ public class UserInfoModel {
     }
 
     // inserts a new user into local database
-    public void addUser(String username, String password)
+    public int addUser(String username, String password)
     {
         ContentValues newUser = new ContentValues();
+        int userId = -1;
         newUser.put("username", username);
         newUser.put("password", password);
 
         try{
             open(); // open the database
-            database.insertWithOnConflict("userInfo", null, newUser, SQLiteDatabase.CONFLICT_IGNORE);
+            userId = (int) database.insertWithOnConflict("userInfo", null, newUser, SQLiteDatabase.CONFLICT_IGNORE);
             close(); // close the database
             Log.d("UserInfoModel", "user info stored in local");
         }catch(SQLException e){
             e.printStackTrace();
         }
+        return userId;
     } // end method insertContact
+
+    public void updateUser(int userId, String username, String password, int age){
+        ContentValues userInfo = new ContentValues();
+        String whereClause = "userInfo_ID == " + userId;
+        userInfo.put("username", username);
+        userInfo.put("password", password);
+        userInfo.put("age", age);
+
+        try{
+            open(); // open the database
+            database.update("userInfo", userInfo, whereClause, null);
+//            String sql = "UPDATE userInfo SET username = '" + newUsername
+//                    + "' WHERE username = '" + oldUsername + "';";
+//            database.rawQuery(sql, null);
+            close(); // close the database
+            Log.d("UserInfoModel", "username updated");
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+    }
 
     // update username
     public void updateUsername(String oldUsername, String newUsername)
     {
+
         try{
             open(); // open the database
             String sql = "UPDATE userInfo SET username = '" + newUsername

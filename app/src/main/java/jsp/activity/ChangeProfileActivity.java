@@ -46,21 +46,38 @@ public class ChangeProfileActivity extends Activity implements View.OnClickListe
         if(v.getId() == R.id.button_save){
             String newUsername = mUpdateView.getText().toString();
             View focusView = null;
-            UserInfoModel uim = new UserInfoModel(this);
-            uim.updateUsername(username, newUsername);
+            boolean cancel = false;
 
+            UserInfoModel uim = new UserInfoModel(this);
             UserInfoDBController controller = new UserInfoDBController(this);
             // Check for a valid username address.
             if (TextUtils.isEmpty(newUsername)) {
                 mUpdateView.setError(getString(R.string.error_field_required));
+                cancel = true;
                 focusView = mUpdateView;
-            } else if (!controller.isUsernameValid(username)) {
+            } else if (!controller.isUsernameValid(newUsername)) {
                 mUpdateView.setError(getString(R.string.error_invalid_username));
+                cancel = true;
                 focusView = mUpdateView;
             }
 
+            if (cancel) {
+                // There was an error; don't attempt login and focus the first
+                // form field with an error.
+                focusView.requestFocus();
+            } else {
+                // Show a progress spinner, and kick off a background task to
+                // perform the user login attempt.
+//                uim.updateUsername(username, newUsername);
+                UserInfoDBController uidbc = new UserInfoDBController(this);
+                uidbc.getUser().updateUsername(newUsername);
+                Intent intent = new Intent(this, ProfileActivity.class);
+                startActivity(intent);
+            }
+
+        }else{
+            Intent intent = new Intent(this, ProfileActivity.class);
+            startActivity(intent);
         }
-        Intent intent = new Intent(this, ProfileActivity.class);
-        startActivity(intent);
     }
 }
