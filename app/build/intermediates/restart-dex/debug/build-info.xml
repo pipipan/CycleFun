@@ -4,47 +4,37 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="107026010052792" >
+    timestamp="112031842882944"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="619" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="992" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="51" />
     <task
         name="verifier"
-        duration="0" />
+        duration="8" />
 
     <artifact
-        location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-        type="DEX" />
+        location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
-    <build timestamp="103152674413670" >
+    <build timestamp="111495430307754" >
         <artifact
             location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="106064202537279"
-        verifier="METHOD_ADDED" >
+        timestamp="112031842882944"
+        verifier="COMPATIBLE" >
         <artifact
-            location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="107026010052792" >
-        <artifact
-            location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
+            location="/Users/jasonzkw/Documents/SoftwareStudy/AndroidStudioProjects/CycleFun/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
